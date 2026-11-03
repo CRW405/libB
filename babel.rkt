@@ -2,8 +2,8 @@
 
 (require racket/cmdline)
 
-(define page-length (make-parameter 100))
-(define page-count (make-parameter 1))
+(define page-length (make-parameter (* 250 5)))
+(define page-count (make-parameter 400))
 (define seed (make-parameter #f))
 (define char-set (make-parameter "alphabet"))
 
@@ -60,7 +60,7 @@
   (list->string (for/list ([i (in-range len)])
                   (list-ref alphabet (random alphabet-length)))))
 
-(printf "Seed / Room ~a | Page Length ~a | Page Count ~a | Character set ~a\n"
+(printf "Seed / Book ID ~a | Page Length ~a | Page Count ~a | Character set ~a\n"
         select-seed
         (page-length)
         (page-count)
