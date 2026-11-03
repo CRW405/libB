@@ -17,7 +17,7 @@
 ; - Binary file generation (probably dont run these)
 ; - Racket DSL
 ; - Searching for coherent sections || coherency scoring
-; - input string mutation, eg: "input" -> "inpuu" -> "inpuv" ...
+; - String mutation, eg: "input" -> "inpuu" -> "inpuv" ...
 
 (command-line
  #:once-each
