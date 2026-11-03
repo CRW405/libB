@@ -60,7 +60,7 @@
   (list->string (for/list ([i (in-range len)])
                   (list-ref alphabet (random alphabet-length)))))
 
-(printf "Seed / Room ~a | Page Length ~a | Page Count ~a | Character set ~a\n\n"
+(printf "Seed / Room ~a | Page Length ~a | Page Count ~a | Character set ~a\n"
         select-seed
         (page-length)
         (page-count)
